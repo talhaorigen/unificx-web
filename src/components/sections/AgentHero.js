@@ -124,7 +124,7 @@ export default function AgentHero() {
           </div>
           <h1
             className="hero-title white-text"
-            style={{ fontSize: "4.5rem", lineHeight: 1.1, marginBottom: "1.5rem" }}
+            style={{ fontSize: "clamp(2.5rem, 7vw, 4.5rem)", lineHeight: 1.1, marginBottom: "1.5rem" }}
           >
             AI agents that handle calls like your <span className="glow-text">best employee.</span>
           </h1>
