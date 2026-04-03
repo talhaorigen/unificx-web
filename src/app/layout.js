@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${nunito.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="font-sans min-h-screen flex flex-col">
         <AnimationManager />

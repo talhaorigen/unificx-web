@@ -78,6 +78,8 @@ export default function StickyPillars() {
                 className="pillars-visual"
                 width={800}
                 height={500}
+                sizes="(max-width: 1024px) 100vw, 800px"
+                style={{ width: '100%', height: 'auto' }}
                 priority
               />
             </div>

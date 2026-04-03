@@ -72,6 +72,7 @@ export default function Navbar() {
             className="logo-w"
             width={120}
             height={28}
+            style={{ width: 'auto', height: 'auto' }}
             priority
           />
           <Image
@@ -80,6 +81,7 @@ export default function Navbar() {
             className="logo-c"
             width={120}
             height={28}
+            style={{ width: 'auto', height: 'auto' }}
           />
         </div>
 
@@ -477,187 +479,6 @@ export default function Navbar() {
         )}
       </AnimatePresence>
 
-      <style jsx global>{`
-        .mobile-toggle {
-          display: none;
-          background: transparent;
-          border: none;
-          padding: 8px;
-          cursor: pointer;
-          z-index: 1001;
-        }
-        
-        .hamburger {
-          width: 24px;
-          height: 18px;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-
-        .hamburger span {
-          display: block;
-          width: 100%;
-          height: 2px;
-          background-color: #fff;
-          border-radius: 2px;
-          transition: all 0.3s ease;
-        }
-        
-        .nav.is-scrolled .hamburger span {
-          background-color: #000;
-        }
-
-        .hamburger.active span:nth-child(1) {
-          transform: translateY(8px) rotate(45deg);
-        }
-        
-        .hamburger.active span:nth-child(2) {
-          opacity: 0;
-        }
-        
-        .hamburger.active span:nth-child(3) {
-          transform: translateY(-8px) rotate(-45deg);
-        }
-
-        @media (max-width: 992px) {
-          .mobile-toggle {
-            display: block;
-          }
-        }
-
-        .mobile-overlay {
-          position: fixed;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.4);
-          backdrop-filter: blur(4px);
-          z-index: 1000;
-        }
-
-        .mobile-drawer {
-          position: fixed;
-          top: 0;
-          right: 0;
-          width: 320px;
-          height: 100vh;
-          background: #fff;
-          z-index: 1001;
-          display: flex;
-          flex-direction: column;
-          box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .mobile-drawer-header {
-          padding: 1.5rem;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          border-bottom: 1px solid #f0f0f0;
-        }
-
-        .mobile-close {
-          background: #f5f5f7;
-          border: none;
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          color: #1a1a1a;
-        }
-
-        .mobile-drawer-content {
-          flex: 1;
-          overflow-y: auto;
-          display: flex;
-          flex-direction: column;
-          padding: 1.5rem;
-        }
-
-        .mobile-nav-list {
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-          margin-bottom: 3rem;
-        }
-
-        .mobile-nav-item {
-          border-bottom: 1px solid #f5f5f7;
-        }
-
-        .mobile-nav-btn {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 1.2rem 0;
-          background: transparent;
-          border: none;
-          font-size: 1.1rem;
-          font-weight: 700;
-          color: #1a1a1a;
-          cursor: pointer;
-          text-align: left;
-        }
-
-        .mobile-nav-link {
-          padding: 1.2rem 0;
-          font-size: 1.1rem;
-          font-weight: 700;
-          color: #1a1a1a;
-          border-bottom: 1px solid #f5f5f7;
-          cursor: pointer;
-        }
-
-        .mobile-caret {
-          transition: transform 0.3s ease;
-          color: #6e6e73;
-        }
-
-        .mobile-caret.rotate {
-          transform: rotate(180deg);
-        }
-
-        .mobile-submenu {
-          overflow: hidden;
-        }
-
-        .mobile-submenu-inner {
-          padding-bottom: 1.5rem;
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-        }
-
-        .mobile-sub-label {
-          font-size: 0.75rem;
-          font-weight: 800;
-          text-transform: uppercase;
-          color: #6e6e73;
-          margin-top: 0.5rem;
-          letter-spacing: 0.05em;
-        }
-
-        .mobile-sub-item {
-          font-size: 1rem;
-          font-weight: 600;
-          color: #424245;
-          padding: 0.5rem 0;
-          cursor: pointer;
-        }
-
-        .mobile-sub-item:hover {
-          color: #006CD2;
-        }
-
-        .mobile-drawer-footer {
-          margin-top: auto;
-          padding-top: 1.5rem;
-        }
-      `}</style>
     </nav>
   );
 }

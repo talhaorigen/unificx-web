@@ -125,6 +125,7 @@ export default function ProblemValue() {
               src="/assets/images/office_interaction.png"
               alt="Call center customer interactions"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
               style={{
                 borderRadius: "24px",

@@ -30,6 +30,7 @@ export default function Footer() {
               className="footer-logo"
               width={120}
               height={28}
+              style={{ width: 'auto', height: 'auto' }}
             />
             <p>
               The most human AI voice agent.

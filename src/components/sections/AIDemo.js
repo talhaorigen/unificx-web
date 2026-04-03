@@ -132,6 +132,8 @@ export default function AIDemo() {
                   className="demo-parallax-img"
                   width={600}
                   height={338}
+                  style={{ width: "100%", height: "auto" }}
+                  priority={index === 0}
                 />
                 <div className="demo-play-overlay">
                   <div className="demo-play-btn">
