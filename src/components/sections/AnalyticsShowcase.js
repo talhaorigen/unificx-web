@@ -55,7 +55,7 @@ export default function AnalyticsShowcase() {
     <section className="analytics-showcase light-section" id="analytics" ref={sectionRef} style={{ padding: "10rem 0 0 0", background: "#fff", overflow: "hidden" }}>
         <div className="container text-center reveal-up">
             <div className="section-label" style={{ fontWeight: 800, color: "var(--blue)", letterSpacing: "2px", textTransform: "uppercase", fontSize: "0.9rem", marginBottom: "1.5rem" }}>ANALYTICS DASHBOARD</div>
-            <h2 className="section-title" style={{ marginBottom: "2rem" }}>See everything your AI is doing.</h2>
+            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold mb-6 tracking-[-0.04em] text-[var(--black)] leading-[1.05]" style={{ marginBottom: "2rem" }}>See everything your AI is doing.</h2>
             <p className="section-subtitle" style={{ maxWidth: "900px", margin: "0 auto 5rem auto", fontSize: "1.25rem" }}>Real-time dashboard showing every active call, resolution rates, average handle time, CSAT scores, top intents, escalation reasons, and language distribution. Export reports. Set alerts.</p>
             
             <div className="dashboard-mockup" style={{ marginTop: "2rem", position: "relative" }}>

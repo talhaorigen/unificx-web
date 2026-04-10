@@ -95,7 +95,7 @@ export default function ConversationBuilder() {
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "6rem" }}>
             <div className="split-content reveal-up" style={{ flex: 1 }}>
                 <div className="section-label" style={{ fontWeight: 800, color: "var(--blue)", letterSpacing: "2px", textTransform: "uppercase", fontSize: "0.9rem", marginBottom: "1.5rem" }}>CONVERSATION BUILDER</div>
-                <h2 className="section-title" style={{ marginBottom: "2rem" }}>Design conversations visually.</h2>
+                <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold mb-6 tracking-[-0.04em] text-[var(--black)] leading-[1.05]" style={{ marginBottom: "2rem" }}>Design conversations visually.</h2>
                 <p className="section-subtitle mb-8" style={{ lineHeight: 1.6, color: "#555", fontSize: "1.25rem" }}>Drag-and-drop conversation flow builder. Define greetings, intent collection, actions, logic, and escalation paths — all without writing code. Templates give you a head start.</p>
                 <ul className="bullet-list" style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
                     {bullets.map((text, i) => (

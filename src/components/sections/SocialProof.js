@@ -1,3 +1,6 @@
+
+
+
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -32,17 +35,17 @@ export default function SocialProof() {
   }, []);
 
   return (
-    <section className="social-proof light-section" ref={sectionRef}>
+    <section className="py-16 border-b border-[var(--gray-light)] flex items-center justify-center" ref={sectionRef}>
       <div className="container">
-        <p className="social-label reveal-up">Trusted by leading companies</p>
-        <div className="logo-grid-scroll reveal-up">
-          <div className="logo-track">
-            <span>Microsoft</span>
-            <span>Salesforce</span>
-            <span>Amazon</span>
-            <span>Shopify</span>
-            <span>Stripe</span>
-            <span>Zendesk</span>
+        <p className="text-[0.75rem] font-bold uppercase tracking-[0.12em] text-[var(--gray-medium)] text-center mb-10 opacity-60 will-change-transform will-change-opacity">Trusted by leading companies</p>
+        <div className="w-full flex justify-center  will-change-transform will-change-opacity">
+          <div className="flex items-center flex-wrap justify-center gap-12 lg:gap-16 opacity-35">
+            <span className="text-[1.3rem] font-extrabold tracking-[-0.02em] text-[var(--black)]">Microsoft</span>
+            <span className="text-[1.3rem] font-extrabold tracking-[-0.02em] text-[var(--black)]">Salesforce</span>
+            <span className="text-[1.3rem] font-extrabold tracking-[-0.02em] text-[var(--black)]">Amazon</span>
+            <span className="text-[1.3rem] font-extrabold tracking-[-0.02em] text-[var(--black)]">Shopify</span>
+            <span className="text-[1.3rem] font-extrabold tracking-[-0.02em] text-[var(--black)]">Stripe</span>
+            <span className="text-[1.3rem] font-extrabold tracking-[-0.02em] text-[var(--black)]">Zendesk</span>
           </div>
         </div>
       </div>

@@ -126,7 +126,7 @@ export default function Capabilities() {
     <section className="understanding light-section" id="capabilities" ref={sectionRef} style={{ padding: "10rem 0", background: "#fff" }}>
       <div className="container">
         <div className="text-center mb-10 reveal-up">
-          <h2 className="section-title">
+          <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold mb-6 tracking-[-0.04em] text-[var(--black)] leading-[1.05]">
             More than speech recognition.
             <span style={{ display: "block", background: "linear-gradient(135deg, #006CD2 0%, #7B1EB9 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent" }}>
               Real understanding.

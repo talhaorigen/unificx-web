@@ -54,7 +54,7 @@ export default function BusinessComms() {
     <section className="business-comms light-section" id="businessComms" ref={sectionRef}>
       <div className="container">
         <div className="text-center comms-header reveal-up">
-          <h2 className="section-title">
+          <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold mb-6 tracking-[-0.04em] text-[var(--black)] leading-[1.05]">
             Business communications
             <br />
             meets customer engagement.

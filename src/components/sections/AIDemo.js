@@ -108,17 +108,17 @@ export default function AIDemo() {
   }, []);
 
   return (
-    <section className="ai-demo light-section" id="demo" ref={sectionRef}>
+    <section className="flex items-center justify-center bg-[var(--off-white)] py-40 relative overflow-hidden before:content-[''] before:absolute before:-top-[20%] before:-right-[10%] before:w-[60%] before:h-[60%] before:bg-[radial-gradient(circle,rgba(0,108,210,0.05)_0%,transparent_70%)] before:pointer-events-none bg-[var(--white)] text-[var(--dark)]" id="demo" ref={sectionRef}>
       <div className="container">
         <div className="text-center mb-8 reveal-up">
-          <h2 className="section-title">Your AI agent, in action.</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title text-[clamp(2.5rem,5vw,4rem)] font-extrabold mb-6 tracking-[-0.04em] text-[var(--black)] leading-[1.05]">Your AI agent, in action.</h2>
+          <p className="section-subtitle text-[1.3rem] text-[var(--gray-medium)] font-normal max-w-[700px] mx-auto leading-[1.6]">
             Don’t take our word for it — listen for yourself. Real AI conversations. No scripts. No
             cherry-picking. This is what your callers will experience.
           </p>
         </div>
 
-        <div className="demo-grid" ref={gridRef}>
+        <div className="demo-grid grid grid-cols-1 md:grid-cols-2 gap-10 mt-20" ref={gridRef}>
           {demos.map((demo, index) => (
             <div
               className="demo-card reveal-up"

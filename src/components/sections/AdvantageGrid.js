@@ -92,7 +92,7 @@ export default function AdvantageGrid() {
     <section className="advantage light-section" id="advantage" ref={sectionRef} style={{ padding: "10rem 0", background: "var(--off-white)", borderTop: "1px solid rgba(0,0,0,0.05)" }}>
       <div className="container">
         <div className="text-center mb-10 reveal-up">
-          <h2 className="section-title">
+          <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold mb-6 tracking-[-0.04em] text-[var(--black)] leading-[1.05]">
             Competitors only analyze the calls their AI handles.{" "}
             <span style={{ display: "block", color: "var(--blue)" }}>
               We analyze EVERY call because we own the phone system.

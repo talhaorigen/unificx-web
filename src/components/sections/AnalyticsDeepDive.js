@@ -70,7 +70,7 @@ export default function AnalyticsDeepDive() {
   return (
     <section className="analytics-deep-dive light-section" id="deep-dive" ref={sectionRef} style={{ padding: "10rem 0 5rem 0", background: "var(--off-white)", overflow: "hidden" }}>
         <div className="container text-center reveal-up">
-            <h2 className="section-title mb-6">See the full picture.</h2>
+            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold mb-6 tracking-[-0.04em] text-[var(--black)] leading-[1.05] mb-6">See the full picture.</h2>
             <p className="section-subtitle mb-10" style={{ maxWidth: "800px", margin: "0 auto 5rem auto" }}>Intelligence analytics dashboard preview including sentiment timeline, topic distribution, agent leaderboard, volume heatmap, and live transcript with highlights.</p>
             
             <div className="full-dashboardreveal reveal-up" style={{ position: "relative", perspective: "2000px" }}>

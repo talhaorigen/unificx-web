@@ -2,7 +2,6 @@ import { Nunito } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimationManager from "@/components/AnimationManager";
-import "./tailwind.css";
 import "./globals.css";
 
 const nunito = Nunito({
