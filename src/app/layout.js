@@ -22,7 +22,10 @@ export default function RootLayout({ children }) {
       className={`${nunito.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="font-sans min-h-screen flex flex-col">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
+      </head>
+      <body className="font-sans min-h-screen flex flex-col" suppressHydrationWarning>
         <AnimationManager />
         <Navbar />
         <main className="flex-grow">{children}</main>

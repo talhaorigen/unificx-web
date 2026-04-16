@@ -1,0 +1,140 @@
+.trackContainer {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 3rem 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+}
+
+.track {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+  width: max-content;
+  animation: scrollMarquee 40s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.card {
+  width: 400px;
+  flex-shrink: 0;
+  background: var(--off-white, #f5f5f7);
+  padding: 3rem 2.5rem;
+  border-radius: 1.75rem; /* var(--radius-2xl) */
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.06); /* var(--shadow-card) */
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* var(--ease-apple) */
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04); /* var(--shadow-card-hover) */
+  border-color: rgba(0, 108, 210, 0.08);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 1.75rem;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 800;
+  background: #f0f0f0;
+  color: #999;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--black, #09090b);
+}
+
+.meta span {
+  font-size: 0.78rem;
+  color: var(--gray-medium, #71717a);
+}
+
+.quote {
+  font-size: 1.05rem;
+  color: var(--dark, #18181b);
+  font-weight: 500;
+  line-height: 1.6;
+  font-style: italic;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  top: -1rem;
+  left: -0.5rem;
+  font-size: 4rem;
+  opacity: 0.06;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.logo {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--gray-medium, #71717a);
+  opacity: 0.55;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+.card {
+  width: 300px;
+  padding: 24px;
+}
+}
