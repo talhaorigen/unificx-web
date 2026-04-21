@@ -30,7 +30,7 @@ function MetricCard({ metric, isVisible, index }: { metric: (typeof metrics)[0];
   const count = useCountUp(metric.value, 2000, isVisible);
 
   return (
-    <div data-gsap-counter data-gsap-tilt className={`text-center p-6 sm:p-10 lg:p-14 rounded-2xl bg-section-alt border border-border/50 hover-lift reveal-scale stagger-${index + 1} ${isVisible ? "reveal-visible" : ""}`}>
+    <div data-gsap-counter data-gsap-tilt className={`text-center p-6 sm:p-10 lg:p-10 rounded-2xl bg-section-alt border border-border/50 hover-lift reveal-scale stagger-${index + 1} ${isVisible ? "reveal-visible" : ""}`}>
       <div className="text-[32px] sm:text-[44px] lg:text-[56px] font-extrabold gradient-text leading-none mb-2 sm:mb-3">
         {count}{metric.suffix}
       </div>
